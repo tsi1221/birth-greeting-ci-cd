@@ -40,11 +40,11 @@ jobs:
       # Build and push frontend Docker
       - name: Push Frontend Docker
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/birth-frontend:latest ./frontend
-          docker push ${{ secrets.DOCKER_USERNAME }}/birth-frontend:latest
+          docker build -t ${{ secrets.tbiruh1221 }}/birth-frontend:latest ./frontend
+          docker push ${{ secrets.tbiruh1221 }}/birth-frontend:latest
 
       # Build and push backend Docker
       - name: Push Backend Docker
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/birth-backend:latest ./backend
-          docker push ${{ secrets.DOCKER_USERNAME }}/birth-backend:latest
+          docker build -t ${{ secrets.tbiruh1221 }}/birth-backend:latest ./backend
+          docker push ${{ secrets.tbiruh1221 }}/birth-backend:latest
